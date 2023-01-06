@@ -18,7 +18,7 @@ bool rat_maze(int row,int col,vector<vector<int>>&a,int n)
         }
         a[row][col] = 0;
     }
-    if(a[row][col+1]==1)    //Jodi ekhane else if ditam tahole uporer if theke backtrack kore r nicher condition e ashtona.
+    if(a[row][col+1]==1) 
     {
         a[row][col] = 2;
         if(rat_maze(row,col+1,a,n))
